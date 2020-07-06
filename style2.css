@@ -1,0 +1,515 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: Montserrat,sans-serif;
+}
+
+header{
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+nav{
+  height: 40px;
+}
+
+.logo{
+  box-sizing: border-box;
+  margin: 5px 0 5px 20px;
+}
+
+.ham{
+  box-sizing: border-box;
+  width: 20px;
+  margin: 10px 20px 10px 0px;
+}
+
+.hide-mobile{
+  display: none;
+}
+
+/* Hero Section */
+
+#hero{
+  background-image: url("hero-section.jpg");
+  background-size: cover;
+  height: 92vh;
+  position: relative;
+  z-index: 1;
+}
+
+#hero::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 92vh;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .6;
+  z-index:-1;
+}
+
+.hero-section{
+  height: 100vh;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 180px 0;
+}
+
+.hero-section h1{
+  color: white;
+  font-size: 2.8em;
+  line-height: 3rem;
+  font-weight: 800;
+}
+
+.cta{
+  margin-top: 30px;
+}
+.cta a{
+  color: white;
+  text-decoration: none;
+  background-color: #e33030;
+  padding: 10px 39px;
+  font-size: 12px;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+#content{
+  display: flex;
+  max-height: 8vh;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.sponsor{
+  width: 8%;
+  margin: auto 15px;
+}
+
+/* Product Section */
+
+#product{
+  text-align: center;
+  height: auto;
+}
+
+#product h2{
+  margin: 60px auto 30px;
+}
+
+#product a{
+  color: black;
+  font-size: .8rem;
+  margin: 30px auto;
+}
+
+
+.product-box{
+  width: 150px;
+  height: 240px;
+  /* background-color: tomato; */
+  margin: 10px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .box-title{
+  text-align: center;
+} */
+
+.box-title p{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  font-size: .8rem;
+  margin-top: 10px;
+
+}
+
+.box-img01{
+  background-image: url("thyme-roots.png");
+}
+
+.box-img02{
+  background-image: url("green-mint-roots.png");
+}
+
+.box-img03{
+  background-image: url("italian-basil-roots.png");
+}
+
+.box-img04{
+  background-image: url("lemon-balm-melissa-roots.png");
+}
+
+.box-img05{
+  background-image: url("red-romain-salad-3-roots.png");
+}
+
+.box-img06{
+  background-image: url("peruvian-mint-roots.png");
+}
+
+.box-img07{
+  background-image: url("hydroponic-lettuce.jpg");
+}
+
+#how-to{
+  text-align: center;
+
+}
+
+#how-to h2{
+  margin: 60px auto 30px;
+  width: 50%;
+}
+
+.left-right{
+  display: flex;
+}
+.content-left{
+  width: 60%;
+  height: 500px;
+}
+
+.content-left ul{
+  text-align: left;
+  display: block;
+  margin: 0px 30px 10px 30px;
+  list-style-type: none;
+}
+
+.content-left ul li p{
+  font-size: .8rem;
+  margin: 8px 0 20px;
+}
+
+.content-right{
+  /* background-color: black; */
+  width: 40%;
+  height: 500px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-image: url("how-to-serve.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#quality{
+  text-align: center;
+  position: relative;
+}
+
+#quality h2{
+  margin: 60px auto 30px;
+}
+
+.quality-lettuce{
+  width: 330px;
+  height: 430px;
+  background-image: url("hydroponic-lettuce-quality.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.q-text01{
+  position: absolute;
+  text-align: right;
+  top: 50px;
+  left: 20px;
+  width: 20%;
+}
+
+.q-text02{
+  position: absolute;
+  text-align: left;
+  top: 50px;
+  right: 20px;
+  width: 20%;
+}
+
+.icon2{
+  margin: 0 0 0 auto;
+}
+
+.q-text03{
+  position: absolute;
+  text-align: right;
+  bottom: 60px;
+  left: 20px;
+  width: 20%;
+}
+
+.q-text04{
+  position: absolute;
+  text-align: left;
+  bottom: 60px;
+  right: 20px;
+  width: 20%;
+
+}
+
+.img-icon{
+  display: block;
+  width: 30px;
+}
+
+.t-content{
+  font-size: .7rem;
+  display: block;
+  margin: 10px 0;
+}
+
+#technology{
+  text-align: center;
+  position: relative;
+}
+
+#technology h2{
+  margin: 60px auto 30px;
+}
+
+.tech-bg{
+  background-image: url("technology-image.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+
+.tech-point li{
+  display: inline-block;
+  width: 25%;
+  margin: 10px 3px;
+
+}
+
+.tech-point li p{
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+#testimonial{
+  text-align: center;
+  background-color: #f3f3f3;
+
+}
+
+#testimonial h2{
+  margin: 30px auto;
+  padding-top: 30px;
+}
+
+.testi-quote{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.quote{
+  margin: 10px auto;
+}
+
+.who{
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+#blog{
+  text-align:center;
+  list-style-type: none;
+  height: auto;
+}
+
+#blog h2{
+  margin: 60px auto 30px;
+}
+
+.blog-sec{
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 10px;
+
+}
+
+.bimg1{
+  background-image: url("hamburger-blog.jpg");
+}
+
+.bimg2{
+  background-image: url("salad-blog.jpg");
+}
+
+.bimg3{
+  background-image: url("spinach-blog.jpg");
+}
+
+.blog-sec p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: .8rem;
+  font-weight: bolder;
+  color: white;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#blog a{
+  color: white;
+  display: block;
+  font-size: .8rem;
+  height: 20px;
+  background-color: #e33030;
+  padding: 10px 0;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#connect{
+  background-image: url("lettuce-farm.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  z-index: 1;
+
+}
+
+#connect::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .6;
+  z-index:-1;
+}
+
+#connect h2{
+  margin: 60px auto 30px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+.form{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-name{
+  border: none;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.form-name p{
+  color: white;
+  font-size: .8rem;
+}
+
+.form-name input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 25px;
+  margin: 10px 0;
+  border: none;
+  font-family: Montserrat;
+  font-size: .5rem;
+  padding: 0 10px;
+}
+
+textarea{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border: none;
+  font-family: Montserrat;
+  font-size: .5rem;
+  padding: 10px;
+  resize: none;
+}
+
+.form-cta{
+  display: block;
+  background-color: #e33030;
+  border: 0;
+  color: white;
+  font-family: Montserrat;
+  font-size: .8rem;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+
+#connect .left-right{
+  width: 80%;
+  margin: 80px auto 0;
+  display: block;
+
+}
+
+#connect .left-content{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+}
+
+/* .left-content p{
+  display: block;
+  margin: auto 0;
+} */
+
+#connect .right-content{
+  color: white;
+  font-size: 0.7rem;
+  margin: 10px auto;
+}
+
+.space{
+  margin-top: 10px;
+}
+
+#footer{
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#footer img{
+  width: 30%;
+  height: auto;
+}
